@@ -1,0 +1,127 @@
+/* 头部样式 */
+.home-header {
+    width: 1100px;
+    height: 65px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    /* 暂时背景色 */
+    background-color: rgb(25, 25, 25);
+}
+
+/* logo样式 */
+.home-header .logo {
+    height: 76px;
+    position: absolute;
+    top: -5px;
+}
+
+.home-header .logo>img {
+    width: 135px;
+    height: 76px;
+}
+
+/* 导航样式 */
+.home-nav {
+    font-size: 14px;
+    color: white;
+    width: 555px;
+    height: 65px;
+    position: absolute;
+    left: 231px;
+}
+
+.home-nav>ul {
+    height: 65px;
+    width: 555px;
+    text-align: left;
+    line-height: 65px;
+    list-style: none;
+}
+
+.home-nav>ul>li {
+    width: 20%;
+    float: left;
+    text-align: center;
+
+}
+
+.home-nav>ul>li>a {
+    text-decoration: none;
+    display: inline-block;
+    width: 81px;
+}
+
+.home-nav>ul>li>a:link {
+    color: white;
+}
+
+.home-nav>ul>li>a:visited {
+    color: white;
+}
+
+/* 搜索框样式 */
+.nav-search {
+    width: 277px;
+    line-height: 65px;
+    position: absolute;
+    right: 0;
+}
+
+.nav-search>select {
+    height: 37px;
+    width: 72px;
+    background: rgb(25, 25, 25);
+    color: white;
+    border: 1px solid white;
+    /* 通过padding-left的值让文字居中 */
+    padding-left: 15px;
+    /* 选中之后高亮样式清除 */
+    outline: none;
+    /* 隐藏select的下拉图标 */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* 居中 */
+    vertical-align: middle;
+}
+.nav-search:after {
+    /* 下拉框三角形 */
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border: 1px solid white;
+    border-style: solid none none solid;
+    transform: rotate(225deg);
+    transform-origin: 2px 1px;
+    margin-left: 0.5rem;
+    transition: all 0.1s;
+    /* 位置 */
+    position: absolute;
+    top: 34px;
+    left: 43px;
+}
+
+.nav-search>input {
+    height: 35px;
+    width: 113px;
+    border: 1px solid white;
+    background: rgb(25, 25, 25);
+    color: white;
+    padding-left: 10px;
+    /* 选中之后高亮样式清除 */
+    outline: none;
+    vertical-align: middle;
+}
+
+.nav-search>button {
+    height: 37px;
+    width: 72px;
+    border: 1px solid white;
+    background: rgb(25, 25, 25);
+    color: white;
+    /* 选中之后高亮样式清除 */
+    /* outline: none; */
+    vertical-align: middle;
+}
