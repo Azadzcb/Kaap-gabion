@@ -15,8 +15,7 @@
     position: absolute;
     top: -5px;
 }
-
-.home-header .logo>img {
+.home-header .logo img {
     width: 135px;
     height: 76px;
 }
@@ -41,13 +40,20 @@
 
 .home-nav>ul>li {
     width: 20%;
+    /* 下划线5像素，所以高度设置为60像素 */
+    height: 60px;
     float: left;
     text-align: center;
 
 }
+/* 鼠标移动显示下边框 */
+.home-nav>ul>li:hover {
+    border-bottom: 5px solid white;
+    transition: .2s;
+}
+
 
 .home-nav>ul>li>a {
-    text-decoration: none;
     display: inline-block;
     width: 81px;
 }

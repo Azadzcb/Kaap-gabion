@@ -9,4 +9,8 @@ body {
     height: 100%;
     font: 12px/1 "Microsoft YaHei", "微软雅黑", "arial", "tahoma", "MicrosoftJhengHei";
     background-color: rgb(25, 25, 25);
+    text-align: center;
+}
+a {
+    text-decoration:none;
 }

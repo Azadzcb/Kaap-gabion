@@ -12,6 +12,9 @@
 	<link rel="icon" href="./img/KAAP_TM-黑.jpg">
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/banner.css">
+	<link rel="stylesheet" href="./css/mian.css">
+	<link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
@@ -19,12 +22,12 @@
 	<div class="home-header">
 		<!-- logo -->
 		<div class="logo">
-			<img src="./img/logo.png" alt="">
+			<a href="index.html"><img src="./img/logo.png" alt="Logo"></a>
 		</div>
 		<!-- 导航 -->
 		<div class="home-nav">
 			<ul>
-				<li><a href="#">首页</a></li>
+				<li style="border-bottom:5px solid white;"><a href="#">首页</a></li>
 				<li><a href="#">关于我们</a></li>
 				<li><a href="#">产品展示</a></li>
 				<li><a href="#">新闻资讯</a></li>
@@ -43,50 +46,82 @@
 		</div>
 	</div>
 	<!-- 顶部轮播图 -->
-	<article style="display: none;">
-		<div class="banner">
-			<img src="./img/banner01.jpg" alt="">
+	<div class="home-banner">
+		<div class="home-banner-box">
+			<div class="home-banner-img1"></div>
+			<div class="home-banner-img2"></div>
+			<div class="home-banner-img3"></div>
+			<div class="home-banner-img4"></div>
+			<!-- <img src="./img/banner01.jpg" alt="">
 			<img src="./img/banner02.jpg" alt="">
 			<img src="./img/banner03.jpg" alt="">
-			<img src="./img/banner04.jpg" alt="">
+			<img src="./img/banner04.jpg" alt=""> -->
 		</div>
-	</article>
+	</div>
 	<!-- 主体内容 -->
-	<section style="display: none;">
-		<table border="1">
-			<tr>
-				<td><img src="./img/主01.png" alt=""></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><img src="./img/主02.png" alt=""></td>
-			</tr>
-			<tr>
-				<td><img src="./img/主03.png" alt=""></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><img src="./img/主04.png" alt=""></td>
-			</tr>
-		</table>
-		<div>
-			<div><img src="./img/公司简介.jpg" alt=""></div>
-			<div><img src="./img/公司新闻.jpg" alt=""></div>
-			<div><img src="./img/联系我们.jpg" alt=""></div>
+	<div class="home-main">
+		<div class="home-main-box">
+			<table>
+				<tr>
+					<td><img src="./img/主01.png" alt=""></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><img src="./img/主02.png" alt=""></td>
+				</tr>
+				<tr>
+					<td><img src="./img/主03.png" alt=""></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><img src="./img/主04.png" alt=""></td>
+				</tr>
+			</table>
+			<div class="home-main-bottom">
+				<div style="left: -21px;">
+					<img src="./img/公司简介.jpg" alt="">
+					<span>公司简介</span>
+					<p>开普丝网是一家创业型公司，依托在全国丝网之乡“中国
+						安平”的产业优势，在丝网行业以高要求，高质量，高标准服务于国内客户；以电焊格宾，景观石笼，格宾护栏，格宾外墙，车间安全护栏，折弯护栏，建筑防护，钢笆网，基坑护栏生产销售组装一体的公司。</p>
+
+				</div>
+				<div>
+					<img src="./img/公司新闻.jpg" alt="">
+					<span>公司新闻</span>
+					<p>主要发布关于电焊石笼，格宾，六角格宾，护栏网产品新闻信息，主要在于提供公司优质服务。让客户满意，让客户购买电焊石笼网</p>
+				</div>
+				<div style="right: -21px;">
+					<img src="./img/联系我们.jpg" alt="">
+					<span>联系我们</span>
+					<p>电话：18617943338 19903282228</p>
+					<p>传真： ＋86-0318-6987490</p>
+					<p>邮箱：sales@kaap-gabion.com</p>
+					<p>地址：河北省衡水市安平县可胡林49号</p>
+				</div>
+			</div>
 		</div>
-	</section>
+
+	</div>
 	<!-- footer -->
-	<footer style="display: none;">
-		<div>
-			<p>联系我们</p>
-			<p>电话：18617943338 19903282228</p>
-			<p>邮箱：sales@kaap-gabion.com</p>
-			<p>地址：河北省衡水市安平县可胡林49号</p>
+	<footer class="home-footer">
+		<div class="home-footer-box">
+			<div class="home-footer-text">
+				<p style="font-size: 20px; color: #FFF;">联系我们</p>
+				<br>
+				<p>电话：18617943338 19903282228</p>
+				<br>
+				<p>邮箱：sales@kaap-gabion.com</p>
+				<br>
+				<p>地址：河北省衡水市安平县可胡林49号</p>
+			</div>
+			<div class="home-footer-img">
+				<img src="./img/微信二维码.jpg" alt="">
+				<img src="./img/淘宝二维码.png" alt="">
+			</div>
+			<span>Copyright ©版权所有：安平县开普丝网制品有限公司 冀ICP备：18022700号 </span>
 		</div>
-		<div><img src="./img/微信二维码.jpg" alt=""></div>
-		<div><img src="./img/淘宝二维码.png" alt=""></div>
 	</footer>
 </body>
 
