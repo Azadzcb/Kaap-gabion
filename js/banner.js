@@ -54,7 +54,7 @@ function nextImg() {
     }
 };
 
-//下一张
+//上一张
 prev.onclick = function (_ev) {
     if (type) { //如果可以渲染
         imgcon.insertBefore(imgdiv[length - 1], imgdiv[0]); //因为当前图片的位置一直都是imgdiv[0]，所以按照循环的思想，上一张就是imli[length-1]
