@@ -63,7 +63,7 @@ prev.onclick = function (_ev) {
         prevTimer = setInterval(prevImg, animationSpeed);
         type = false; //因为设置了定时器，定时器在渲染，所以这时不能被渲染
 
-        changeColor(imgdiv[1]);
+        changeColor(imgdiv[0]);
     }
 };
 
