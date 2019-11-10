@@ -48,40 +48,40 @@
 }
 /* 翻页按钮 */
 #banner-btn-left {
-    width: 34px;
-    height: 58px;
+    width: 4vw;
+    height: 7vw;
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
     display: inline-block;
-    top: 260px;
+    top: 320px;
     left: 30px;
     cursor: pointer;
 }
 #banner-btn-right {
-    width: 34px;
-    height: 58px;
+    width: 4vw;
+    height: 7vw;
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
     display: inline-block;
-    top: 260px;
+    top: 320px;
     right: 30px;
     cursor: pointer;
 }
 .home-banner-btn div>img {
-    width: 34px;
-    height: 58px;
+    width: 4vw;
+    height: 7vw;
 }
 /* 翻页圆点 */
 .home-banner-dot {
-    width: 84px;
-    height: 14px;
+    width: 7vw;
+    height: 3vw;
     display: inline-block;
     position: absolute;
     top: 580px;
 }
 .home-banner-dot >ul>li{
-    width: 14px;
-    height: 14px;
+    width: 1.2vw;
+    height: 1.2vw;
     float: left;
     margin-left: 7px;
     border-radius: 14px;
@@ -93,7 +93,7 @@
 }
 #home-banner-dotul {
     position: absolute;
-    width: 84px;
-    height: 14px;
+    width: 7vw;
+    height: 3vw;
     list-style: none;
 }

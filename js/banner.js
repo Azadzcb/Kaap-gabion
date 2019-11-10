@@ -7,11 +7,8 @@ var prev = document.getElementById("banner-btn-left");
 var next = document.getElementById("banner-btn-right");
 var banner = document.getElementById("home-banner");
 var box = document.getElementById("home-banner-box");
-
 var imgcon = document.getElementById("home-banner-content");
-
 // console.log(imgcon);
-
 var imgdiv = document.getElementById("home-banner-content").getElementsByTagName("div");
 var divwidth = document.getElementById("home-banner-content").getElementsByTagName("div")[0].offsetWidth;
 var dot = document.getElementById("home-banner-dot");
@@ -28,24 +25,22 @@ imgcon.style.width = divwidth * length + "px"; //将ul的宽度设置为所有�
 //给每一个dotli添加一个index属性，方便改变小圆点的背景颜色
 
 for (var i = 0; i < length; i++) {
-
     imgdiv[i].index = i;
     dotli[i].index = i;
-
 }
 //给第一个小圆点加上背景
 changeColor(imgdiv[0]);
 
-
 // 下一张
-next.onclick = function (ev) {
+next.onclick = function (_ev) {
+    if (type) {
     divwidth = 0;
     clearInterval(nextTimer); //定时器渲染与点击渲染判断,先把上一次留下来的定时器清除（确保清除干净—）
     nextTimer = setInterval(nextImg, animationSpeed);
     type = false;
 
     changeColor(imgdiv[1]) //改变原点颜色
-
+    }
 };
 // 将图片向右移动整个宽度的宽度，底下的图片就出现
 function nextImg() {
@@ -60,7 +55,7 @@ function nextImg() {
 };
 
 //下一张
-prev.onclick = function (ev) {
+prev.onclick = function (_ev) {
     if (type) { //如果可以渲染
         imgcon.insertBefore(imgdiv[length - 1], imgdiv[0]); //因为当前图片的位置一直都是imgdiv[0]，所以按照循环的思想，上一张就是imli[length-1]
         clearInterval(prevTimer);
@@ -129,9 +124,9 @@ function showImg(inde) {
 };
 
 //当鼠标移入图片区域时，消除定时器，鼠标移出时恢复定时器
-box.onmouseover = function (ev) {
+box.onmouseover = function (_ev) {
     clearInterval(mainTimer);
 };
-box.onmouseout = function (ev) {
+box.onmouseout = function (_ev) {
     mainTimer = setInterval(next.onclick, stopTime);
 };
