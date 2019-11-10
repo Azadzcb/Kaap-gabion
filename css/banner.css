@@ -1,41 +1,99 @@
 .home-banner {
-    position: relative;
-}
-.home-banner-box{
+    width: 100%;
+    /* position: relative; */
     height: 550px;
 }
-/* .home-banner-box > img {
+#home-banner-box{
     width: 100%;
     height: 550px;
-    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+#home-banner-content {
+    height: 550px;
     position: absolute;
-} */
+    left: 0;
+}
+#home-banner-content>div {
+    float: left;
+}
 /* banner图片 */
 .home-banner-img1 {
     background: url(../img/banner01.jpg) center no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 550px;
-    position: absolute;
+    /* position: absolute; */
     /* display: none; */
 }
 .home-banner-img2 {
     background: url(../img/banner02.jpg) center no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 550px;
-    position: absolute;
-    display: none;
+    /* position: absolute; */
+    /* display: none; */
 }
 .home-banner-img3 {
     background: url(../img/banner03.jpg) center no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 550px;
-    position: absolute;
-    display: none;
+    /* position: absolute; */
+    /* display: none; */
 }
 .home-banner-img4 {
     background: url(../img/banner04.jpg) center no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 550px;
+    /* position: absolute; */
+    /* display: none; */
+}
+/* 翻页按钮 */
+#banner-btn-left {
+    width: 34px;
+    height: 58px;
+    background: rgba(0, 0, 0, 0.2);
     position: absolute;
-    display: none;
+    display: inline-block;
+    top: 260px;
+    left: 30px;
+    cursor: pointer;
+}
+#banner-btn-right {
+    width: 34px;
+    height: 58px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: inline-block;
+    top: 260px;
+    right: 30px;
+    cursor: pointer;
+}
+.home-banner-btn div>img {
+    width: 34px;
+    height: 58px;
+}
+/* 翻页圆点 */
+.home-banner-dot {
+    width: 84px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 580px;
+}
+.home-banner-dot >ul>li{
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-left: 7px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.home-banner-dot >ul>li.active {
+    background-color: white !important;
+}
+#home-banner-dotul {
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    list-style: none;
 }
