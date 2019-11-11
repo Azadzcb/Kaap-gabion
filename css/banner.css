@@ -76,8 +76,8 @@
     width: 7vw;
     height: 3vw;
     display: inline-block;
-    position: absolute;
-    top: 580px;
+    position: relative;
+    top: -30px;
 }
 .home-banner-dot >ul>li{
     width: 1.2vw;

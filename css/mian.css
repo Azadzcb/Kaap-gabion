@@ -14,26 +14,52 @@
 }
 
 /* table样式 */
-.home-main-box>table {
-    /* width: 1100px;不起作用 */
-    /* height: 1136px;不起作用 */
-    /* 内边框不可见 */
-    border-spacing: 0;
+.home-main-box table tr {
+    display: block;
+    margin-bottom: 12px;
 }
 
 .home-main-box table td {
     background: white;
+    text-align: left;
+    width: 545px;
+
 }
 
 .home-main-box>table img {
-    width: 550px;
+    width: 545px;
     height: 265px;
+}
+.home-main-box table tr td div {
+    width: 493px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: -15px;
+}
+.home-main-box table tr td p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.home-main-box table tr td a {
+    /* width: 110px; */
+    /* height: 38px; */
+    border: 1px solid #000;
+    padding: 10px 30px;
+    color: #000;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+.home-main-box table tr td a:hover {
+    background: rgb(68, 68, 68);
+    color: white;
 }
 
 /* 主体内容下面{公司简介，公司新闻，联系我们}外部盒子样式  1100*365 */
 .home-main-bottom {
     height: 365px;
-    margin-top: 58px;
+    margin-top: 46px;
 
 }
 
@@ -52,7 +78,8 @@
 /* 公司简介，公司新闻，联系我们图片样式  350*220 */
 .home-main-bottom>div>img {
     width: 350px;
-    height: 220px;
+    height: 190px;
+    margin-bottom: 20px;
 }
 .home-main-bottom>div>span {
     font-size: 22px ;

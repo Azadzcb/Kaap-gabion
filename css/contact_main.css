@@ -1,0 +1,37 @@
+.contact-main {
+    width: 100%;
+    height: 630px;
+    background: yellow;
+}
+.contact-main-box {
+    width: 1100px;
+    height: 630px;
+    margin: 0 auto;
+    background: skyblue;
+}
+/* 联系我们标题 */
+.contact-main-box-top {
+    height: 50px;
+    background: tan;
+    margin-bottom: 10px;
+}
+.contact-main-box-top span {
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+}
+/* 联系我们内容 */
+/* 地图 */
+.contact-main-left {
+    width: 641px;
+    height: 505px;
+    display: inline-block;
+    background: sandybrown;
+}
+/* 地址 */
+.contact-main-right {
+    width: 417px;
+    height: 505px;
+    display: inline-block;
+    background: darkolivegreen;
+}

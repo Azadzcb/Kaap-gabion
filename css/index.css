@@ -11,6 +11,11 @@ body {
     background-color: rgb(25, 25, 25);
     text-align: center;
 }
+/* 清除a标签样式 */
 a {
     text-decoration:none;
+}
+/* 清除ul标签样式 */
+ul {
+    list-style: none;
 }
