@@ -11,15 +11,17 @@
     margin: 0 auto;
     /* background: blueviolet; */
 }
-
+/* 关于我们标题 */
 .about-main-top {
+    height: 50px;
+    margin-bottom: 10px;
+}
+.about-main-top span {
     font-size: 30px;
     color: #ffffff;
-    margin-bottom: 30px;
-    padding-top: 30px;
-
+    line-height: 50px;
 }
-
+/* 左边图片堆样式 */
 .about-main-box-left {
     width: 510px;
     height: 385px;
@@ -71,7 +73,7 @@
     margin-top: -101px;
     margin-left: -101px;
 }
-
+/* 右边文字样式 */
 .about-main-box-right {
     width: 560px;
     height: 380px;

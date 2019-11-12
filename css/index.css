@@ -11,9 +11,15 @@ body {
     background-color: rgb(25, 25, 25);
     text-align: center;
 }
-/* 清除a标签样式 */
+/* 设置a标签默认样式 */
 a {
     text-decoration:none;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
 }
 /* 清除ul标签样式 */
 ul {

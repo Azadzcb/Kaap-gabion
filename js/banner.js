@@ -1,20 +1,24 @@
+function $(id){
+    return document.getElementById(id);
+};
+
 var animationSpeed = 1; //一次切换的图片数
 var minSpeed = 5; //每次left增加或减少的数
 var stopTime = 5000; //要隔多少秒开始切换下一张
 
 //获取页面元素
-var prev = document.getElementById("banner-btn-left");
-var next = document.getElementById("banner-btn-right");
-var banner = document.getElementById("home-banner");
-var box = document.getElementById("home-banner-box");
-var imgcon = document.getElementById("home-banner-content");
+var prev = $("banner-btn-left");
+var next = $("banner-btn-right");
+var banner = $("home-banner");
+var box = $("home-banner-box");
+var imgcon = $("home-banner-content");
 // console.log(imgcon);
-var imgdiv = document.getElementById("home-banner-content").getElementsByTagName("div");
-var divwidth = document.getElementById("home-banner-content").getElementsByTagName("div")[0].offsetWidth;
-var dot = document.getElementById("home-banner-dot");
-var dotul = document.getElementById("home-banner-dotul");
-var dotli = document.getElementById("home-banner-dotul").getElementsByTagName('li');
-var length = document.getElementById("home-banner-dotul").getElementsByTagName('li').length;
+var imgdiv = $("home-banner-content").getElementsByTagName("div");
+var divwidth = $("home-banner-content").getElementsByTagName("div")[0].offsetWidth;
+var dot = $("home-banner-dot");
+var dotul = $("home-banner-dotul");
+var dotli = $("home-banner-dotul").getElementsByTagName('li');
+var length = $("home-banner-dotul").getElementsByTagName('li').length;
 var type = true; //是否可以渲染
 var nextTimer = null;
 var prevTimer = null;
